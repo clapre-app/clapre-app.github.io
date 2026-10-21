@@ -290,3 +290,4 @@ footer a:hover { color: var(--ink); }
 html { overflow-x: clip; }
 @media (max-width: 880px) { .verse blockquote br { display: none; } }
 [id] { scroll-margin-top: 80px; }
+footer .legal { margin-top: 18px; font-size: 12.5px; color: var(--ink-3); opacity: .8; }
