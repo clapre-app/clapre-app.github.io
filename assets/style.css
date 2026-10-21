@@ -223,3 +223,74 @@ footer a:hover { color: var(--ink); }
 .doc a { color: var(--amber); text-decoration: none; }
 .doc a:hover { text-decoration: underline; }
 .doc code { font: 0.9em ui-monospace, SFMono-Regular, Menlo, monospace; background: rgba(255,255,255,0.07); padding: 2px 6px; border-radius: 6px; color: var(--ink); }
+
+/* ---------- 탭 ---------- */
+.panel[hidden] { display: none; }
+.brand-mark {
+  width: 28px; height: 28px; border-radius: 8px; display: grid; place-items: center;
+  font-weight: 800; font-size: 15px; color: #fff;
+  background: conic-gradient(from 200deg, #f04848, #f0963c, #f6c62a, #f04848);
+}
+.tabs { display: flex; gap: 4px; margin-left: auto; font-size: 15px; }
+.tabs a { padding: 6px 14px; border-radius: 999px; color: var(--ink-2); transition: color .2s, background .2s; }
+.tabs a:hover { color: var(--ink); }
+.tabs a.active { color: var(--ink); background: rgba(255,255,255,0.08); }
+.nav-contact {
+  font-size: 14px; font-weight: 600; padding: 6px 14px; border-radius: 999px;
+  border: 1px solid var(--line); color: var(--ink);
+}
+.nav-contact:hover { border-color: rgba(255,255,255,0.25); }
+
+/* ---------- 회사 ---------- */
+.company-hero { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 64px; text-align: left; }
+.company-hero h1 { text-align: left; margin-left: 0; max-width: 12ch; }
+.company-hero .lede { margin-left: 0; text-align: left; }
+.company-hero .cta { justify-content: flex-start; }
+.company-logo { height: min(520px, 62vh); width: auto; filter: drop-shadow(0 30px 80px rgba(240,150,60,0.18)); }
+.verse { text-align: center; }
+.verse blockquote {
+  margin: 18px auto 14px; max-width: 22ch; font-size: clamp(30px, 4.4vw, 52px); line-height: 1.18;
+  font-weight: 700; letter-spacing: -0.035em;
+}
+.verse cite { display: block; font-style: normal; color: var(--amber); font-weight: 600; letter-spacing: 0.02em; margin-bottom: 22px; }
+.verse .section-lede { margin: 0 auto; }
+.product {
+  display: grid; grid-template-columns: 96px 1fr auto; align-items: center; gap: 28px;
+  margin-top: 28px; padding: 28px; border-radius: var(--radius); border: 1px solid var(--line); background: var(--card);
+  transition: border-color .2s, transform .2s;
+}
+.product:hover { border-color: rgba(255,255,255,0.2); transform: translateY(-2px); }
+.product img { border-radius: 22px; }
+.product b { font-size: 24px; letter-spacing: -0.02em; }
+.product p { margin: 4px 0 0; color: var(--ink-2); }
+.product-go { color: var(--amber); font-weight: 600; white-space: nowrap; }
+.company-facts { margin-top: 28px; }
+
+/* ---------- 문의 ---------- */
+.contact { display: grid; gap: 16px; margin-top: 18px; padding: 26px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); }
+.contact .row { display: grid; grid-template-columns: 1fr 1.4fr; gap: 16px; }
+.contact label { display: grid; gap: 6px; font-size: 14px; font-weight: 600; color: var(--ink); }
+.contact input, .contact select, .contact textarea {
+  font: 400 16px var(--font); color: var(--ink); background: rgba(255,255,255,0.05);
+  border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; width: 100%;
+}
+.contact textarea { resize: vertical; }
+.contact input:focus, .contact select:focus, .contact textarea:focus { outline: none; border-color: var(--amber); }
+.contact select option { color: #111; }
+.contact-actions { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; font-size: 14px; color: var(--ink-3); }
+.contact-actions .btn { border: 0; cursor: pointer; font-family: var(--font); }
+
+@media (max-width: 880px) {
+  .company-hero { grid-template-columns: 1fr; gap: 32px; }
+  .company-logo { height: 300px; justify-self: center; }
+  .product { grid-template-columns: 64px 1fr; }
+  .product img { width: 64px; height: 64px; border-radius: 15px; }
+  .product-go { grid-column: 1 / -1; }
+  .contact .row { grid-template-columns: 1fr; }
+  .tabs a { padding: 6px 9px; font-size: 14px; }
+  .nav .wrap { gap: 10px; }
+  .nav .brand > span:last-child, .nav-contact { display: none; }
+}
+html { overflow-x: clip; }
+@media (max-width: 880px) { .verse blockquote br { display: none; } }
+[id] { scroll-margin-top: 80px; }
