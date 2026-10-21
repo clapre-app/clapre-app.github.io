@@ -226,11 +226,7 @@ footer a:hover { color: var(--ink); }
 
 /* ---------- 탭 ---------- */
 .panel[hidden] { display: none; }
-.brand-mark {
-  width: 28px; height: 28px; border-radius: 8px; display: grid; place-items: center;
-  font-weight: 800; font-size: 15px; color: #fff;
-  background: conic-gradient(from 200deg, #f04848, #f0963c, #f6c62a, #f04848);
-}
+.brand-mark { width: 28px; height: 28px; border-radius: 0; }
 .tabs { display: flex; gap: 4px; margin-left: auto; font-size: 15px; }
 .tabs a { padding: 6px 14px; border-radius: 999px; color: var(--ink-2); transition: color .2s, background .2s; }
 .tabs a:hover { color: var(--ink); }
