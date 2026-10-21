@@ -1,2 +1,3 @@
-# clapre-app.github.io
-making apps
+# ingtype by Clapre
+
+https://clapre-app.github.io
