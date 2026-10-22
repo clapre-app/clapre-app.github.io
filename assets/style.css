@@ -108,11 +108,7 @@ html[data-lang="en"] h1 { max-width: 16ch; }
   box-shadow: 0 0 0 1px rgba(255,255,255,0.10) inset, 0 30px 90px -10px rgba(0,0,0,0.75);
 }
 .iphone img { border-radius: clamp(21px, 3.3vw, 44px); }
-.iphone::after {
-  /* 다이내믹 아일랜드 */
-  content: ""; position: absolute; top: calc(2.2% + 4px); left: 50%; transform: translateX(-50%);
-  width: 28%; height: 2.6%; border-radius: 99px; background: #050506;
-}
+/* 다이내믹 아일랜드는 캡처에 이미 들어 있어서 따로 그리지 않는다. */
 .stage .iphone { position: absolute; width: 21%; right: -3%; bottom: -10%; }
 
 /* 신뢰 줄 */
@@ -142,7 +138,7 @@ h2 { margin: 10px 0 16px; font-size: clamp(32px, 4.4vw, 54px); line-height: 1.08
 
 /* 펫 띠 */
 .pets-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 26px; }
-.pets-row span {
+.pets-row span, .pets-row .theme-pill {
   padding: 7px 13px; border-radius: 999px; background: var(--card); border: 1px solid var(--line);
   font-size: 14px; color: var(--ink-2);
 }
@@ -356,3 +352,11 @@ footer .legal { margin-top: 18px; font-size: 12.5px; color: var(--ink-3); opacit
 .privacy-band h2 { max-width: none; }
 .feature-bar .get { white-space: nowrap; }
 @media (max-width: 880px) { .stage3d { margin: 24px -24px 0; } }
+
+/* 테마 고르기: 알약을 누르면 옆 아이패드 화면이 그 테마로 바뀐다 */
+.theme-pill { font: inherit; cursor: pointer; transition: background .2s, color .2s, border-color .2s; }
+.pets-row .theme-pill { color: var(--ink-2); }
+.pets-row .theme-pill:hover { color: var(--ink); border-color: rgba(255,255,255,.25); }
+.pets-row .theme-pill.on { background: var(--ink); color: #111; border-color: var(--ink); }
+.theme-shot img { transition: opacity .25s ease; }
+.theme-shot img.fading { opacity: 0; }

@@ -53,6 +53,17 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     route();
+    // 테마 알약: 누르면 아이패드 화면을 그 테마로 바꾼다
+    var shot = document.querySelector(".theme-shot img");
+    document.querySelectorAll(".theme-pill").forEach(function (b) {
+      var pre = new Image(); pre.src = b.getAttribute("data-img");
+      b.addEventListener("click", function () {
+        document.querySelectorAll(".theme-pill").forEach(function (o) { o.classList.toggle("on", o === b); o.setAttribute("aria-pressed", o === b); });
+        if (!shot) return;
+        shot.classList.add("fading");
+        setTimeout(function () { shot.src = b.getAttribute("data-img"); shot.classList.remove("fading"); }, 180);
+      });
+    });
     var form = document.getElementById("contact-form");
     if (form) form.addEventListener("submit", function (e) {
       e.preventDefault();
