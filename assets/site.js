@@ -60,6 +60,7 @@
       b.addEventListener("click", function () {
         document.querySelectorAll(".theme-pill").forEach(function (o) { o.classList.toggle("on", o === b); o.setAttribute("aria-pressed", o === b); });
         if (!shot) return;
+        shot.parentNode.classList.toggle("is-picture", b.textContent === "Picture Custom");
         shot.classList.add("fading");
         setTimeout(function () { shot.src = b.getAttribute("data-img"); shot.classList.remove("fading"); }, 180);
       });
