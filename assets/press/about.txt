@@ -1,0 +1,14 @@
+ingtype by Clapre
+
+Short: Your iPad becomes a silent Magic Keyboard. Your iPhone becomes the trackpad.
+
+ingtype turns an iPad lying flat on the desk into a ten-finger keyboard for the Mac, and an iPhone into its trackpad.
+It sends key positions instead of characters, so every language and input method behaves exactly as on a physical keyboard.
+Silent by default. No server, no account, no tracking: devices talk directly over Wi-Fi, encrypted.
+
+Platforms: iPad, iPhone (iPadOS/iOS 17+), free companion app for Mac (macOS 14+)
+Price: one-time purchase, no subscription, no in-app purchases
+Release: November 5, 2026
+Developer: Clapre, Seoul, South Korea
+Contact: clapre.app@gmail.com
+Website: https://clapre-app.github.io
