@@ -395,3 +395,4 @@ html[lang="ja"] .company-hero h1, html[lang="zh-Hans"] .company-hero h1 { max-wi
   .lang-pick svg { display: block; width: 18px; height: 18px; }
   .lang-select { position: absolute; inset: 0; opacity: 0; width: 100%; }
 }
+.nw { white-space: nowrap; }
