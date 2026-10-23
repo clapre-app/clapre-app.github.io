@@ -1,6 +1,54 @@
-// 탭(해시로 전환, 새로 고침 없음), 문의 메일 작성, 스크롤 나타나기.
+// 탭(해시로 전환, 새로 고침 없음), 언어(7개), 문의 메일 작성, 스크롤 나타나기.
 (function () {
   var TABS = ["clapre", "ingtype", "support", "privacy"];
+  var LANGS = ["en", "ko", "ja", "de", "zh-Hans", "es", "fr"];
+  var lang = "en";
+
+  // ?lang=xx > 저장한 선택 > 기기 언어 > 영어
+  function pickLang() {
+    var q = (location.search.match(/[?&]lang=([\w-]+)/) || [])[1];
+    var saved = null;
+    try { saved = localStorage.getItem("lang"); } catch (e) {}
+    var cands = [q, saved].concat(navigator.languages || [navigator.language]);
+    for (var i = 0; i < cands.length; i++) {
+      var c = (cands[i] || "").toLowerCase();
+      if (!c) continue;
+      if (c.indexOf("zh") === 0) return "zh-Hans";
+      for (var j = 0; j < LANGS.length; j++) if (c === LANGS[j].toLowerCase() || c.split("-")[0] === LANGS[j]) return LANGS[j];
+    }
+    return "en";
+  }
+
+  function t(key, fallback) { var d = window.I18N && I18N[lang]; return (d && d[key]) || fallback; }
+
+  // 한국어는 한국어 UI 캡처, 그 밖은 영어 UI 캡처(앱 화면이 영어·한국어 두 가지).
+  function imgName(n) { return "assets/img/" + n + "-" + (lang === "ko" ? "ko" : "en") + ".webp"; }
+
+  function applyLang(l) {
+    lang = l;
+    var root = document.documentElement;
+    root.lang = l; root.setAttribute("data-lang", l);
+    var d = (window.I18N && I18N[l]) || {};
+    var en = (window.I18N && I18N.en) || {};
+    document.querySelectorAll("[data-i18n]").forEach(function (el) {
+      var k = el.getAttribute("data-i18n"); var v = d[k] || en[k];
+      if (v != null) el.innerHTML = v;
+    });
+    document.querySelectorAll("[data-i18n-ph]").forEach(function (el) {
+      var k = el.getAttribute("data-i18n-ph"); el.placeholder = d[k] || en[k] || el.placeholder;
+    });
+    document.querySelectorAll("img[data-l10n-img]").forEach(function (el) { el.src = imgName(el.getAttribute("data-l10n-img")); });
+    document.querySelectorAll(".theme-pill[data-l10n-img]").forEach(function (el) { el.setAttribute("data-img", imgName(el.getAttribute("data-l10n-img"))); });
+    document.querySelectorAll("img[data-l10n-banner]").forEach(function (el) { el.src = "assets/img/featured-banner-" + l + ".webp"; });
+    document.querySelectorAll("img[data-poster]").forEach(function (el) { el.src = "assets/img/posters/" + l + "/" + el.getAttribute("data-poster") + ".webp"; });
+    var sel = document.querySelector(".lang-select"); if (sel) sel.value = l;
+    var cur = TABS.filter(function (x) { var p = document.getElementById("tab-" + x); return p && !p.hidden; })[0];
+    if (cur) setTitle(cur);
+  }
+
+  function setTitle(tab) {
+    document.title = tab === "clapre" ? "Clapre" : ({ ingtype: "ingtype", support: t("t089", "Support"), privacy: t("t198", "Privacy Policy") })[tab] + " — Clapre";
+  }
 
   function show(tab, targetId) {
     if (TABS.indexOf(tab) < 0) tab = "clapre";
@@ -11,7 +59,7 @@
     document.querySelectorAll("[data-tab]").forEach(function (a) {
       a.classList.toggle("active", a.getAttribute("data-tab") === tab);
     });
-    document.title = tab === "clapre" ? "Clapre" : ({ ingtype: "ingtype", support: "Support", privacy: "Privacy Policy" })[tab] + " — Clapre";
+    setTitle(tab);
     reveal(document.getElementById("tab-" + tab));
     var el = targetId && document.getElementById(targetId);
     if (el) el.scrollIntoView({ block: "start" });
@@ -52,6 +100,12 @@
   window.addEventListener("hashchange", route);
 
   document.addEventListener("DOMContentLoaded", function () {
+    applyLang(pickLang());
+    var sel = document.querySelector(".lang-select");
+    if (sel) sel.addEventListener("change", function () {
+      try { localStorage.setItem("lang", sel.value); } catch (e) {}
+      applyLang(sel.value);
+    });
     route();
     // 테마 알약: 누르면 아이패드 화면을 그 테마로 바꾼다
     var shot = document.querySelector(".theme-shot img");
@@ -62,6 +116,9 @@
         if (!shot) return;
         shot.parentNode.classList.toggle("is-picture", b.textContent === "Picture Custom");
         shot.classList.add("fading");
+        // 언어를 바꿔도 고른 테마가 유지되게, 화면 이미지의 언어별 이름도 같이 바꾼다.
+        var ln = b.getAttribute("data-l10n-img");
+        if (ln) shot.setAttribute("data-l10n-img", ln); else shot.removeAttribute("data-l10n-img");
         setTimeout(function () { shot.src = b.getAttribute("data-img"); shot.classList.remove("fading"); }, 180);
       });
     });

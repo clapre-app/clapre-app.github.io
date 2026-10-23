@@ -1,437 +1,412 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
 <title>Clapre</title>
-<meta name="description" content="Clapre is an independent software studio in Seoul. Makers of ingtype: your iPad as a silent Magic Keyboard, your iPhone as the trackpad.">
-<meta property="og:title" content="Clapre">
-<meta property="og:description" content="Makers of ingtype. Your iPad as a silent Magic Keyboard, your iPhone as the trackpad.">
-<meta property="og:image" content="assets/img/og-icon.jpg">
-<meta name="theme-color" content="#0e1122">
-<link rel="icon" href="assets/img/favicon-clapre.png?v=15">
-<link rel="apple-touch-icon" href="assets/img/icon-256.png">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="assets/style.css?v=15">
-<script src="assets/site.js?v=15" defer></script>
+<meta content="Clapre is an independent software studio in Seoul. Makers of ingtype: your iPad as a silent Magic Keyboard, your iPhone as the trackpad." name="description"/>
+<meta content="Clapre" property="og:title"/>
+<meta content="Makers of ingtype. Your iPad as a silent Magic Keyboard, your iPhone as the trackpad." property="og:description"/>
+<meta content="assets/img/og-icon.jpg" property="og:image"/>
+<meta content="#0e1122" name="theme-color"/>
+<link href="assets/img/favicon-clapre.png?v=15" rel="icon"/>
+<link href="assets/img/icon-256.png" rel="apple-touch-icon"/>
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet"/>
+<link href="assets/style.css?v=16" rel="stylesheet"/>
+<script src="assets/i18n.js?v=16"></script>
+<script defer="" src="assets/site.js?v=16"></script>
 </head>
 <body>
-
 <header class="nav">
-  <div class="wrap">
-    <a class="brand" href="#" data-tab="clapre"><img class="brand-mark" src="assets/img/clapre-mark.png?v=15" width="32" height="32" alt=""><span>Clapre</span></a>
-    <nav class="tabs" role="tablist">
-      <a href="#" data-tab="clapre">Clapre</a>
-      <a href="#ingtype" data-tab="ingtype">ingtype</a>
-      <a href="#support" data-tab="support">Support</a>
-      <a href="#privacy" data-tab="privacy">Privacy</a>
-    </nav>
-    <a class="nav-contact" href="#support" data-goto="contact">Contact</a>
-  </div>
+<div class="wrap">
+<a class="brand" data-tab="clapre" href="#"><img alt="" class="brand-mark" height="32" src="assets/img/clapre-mark.png?v=15" width="32"/><span>Clapre</span></a>
+<nav class="tabs" role="tablist">
+<a data-tab="clapre" href="#">Clapre</a>
+<a data-tab="ingtype" href="#ingtype">ingtype</a>
+<a data-i18n="t001" data-tab="support" href="#support">Support</a>
+<a data-i18n="t002" data-tab="privacy" href="#privacy">Privacy</a>
+</nav>
+<label class="lang-pick"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><select aria-label="Language" class="lang-select"><option value="en">English</option><option value="ko">한국어</option><option value="ja">日本語</option><option value="de">Deutsch</option><option value="zh-Hans">简体中文</option><option value="es">Español</option><option value="fr">Français</option></select></label>
+<a class="nav-contact" data-goto="contact" data-i18n="t003" href="#support">Contact</a>
+</div>
 </header>
-
 <main>
 <!-- ===== Clapre (회사) ===== -->
 <div class="panel" id="tab-clapre">
-  <div class="hero company">
-    <div class="wrap company-hero">
-      <div class="company-copy">
-        <span class="eyebrow reveal"><i></i>Independent software studio · Seoul</span>
-        <h1 class="reveal">Small tools,<br>made with care.</h1>
-        <p class="lede reveal">Clapre makes quiet, private software for the Apple devices you already own. One thing at a time, done properly.</p>
-        <div class="cta reveal">
-          <a class="btn btn-primary" href="#ingtype" data-tab="ingtype">Meet ingtype</a>
-          <a class="btn btn-ghost" href="#support" data-goto="contact">Contact Us</a>
-        </div>
-      </div>
-      <img class="company-logo reveal" src="assets/img/clapre-logo.png" width="320" height="900" alt="Clapre">
-    </div>
-  </div>
-
-  <section class="verse">
-    <div class="wrap reveal">
-      <div class="kicker">Our Foundation</div>
-      <blockquote>“Commit your work to the Lord,<br>and your plans will be established.”</blockquote>
-      <cite>Proverbs 16:3</cite>
-      <p class="section-lede">Every product starts here. We hand the work over first, then build it as carefully as we know how, and trust the outcome to Him.</p>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <div class="reveal">
-        <div class="kicker">About</div>
-        <h2>What we believe.</h2>
-      </div>
-      <div class="cards reveal">
-        <div class="card"><b>Quiet by default</b><p>Software should fit into your day without asking for attention. No noise, no nagging, no pop-ups.</p></div>
-        <div class="card"><b>Private by design</b><p>No servers, no accounts, no tracking. What you do on your devices stays on your devices.</p></div>
-        <div class="card"><b>Pay once, own it</b><p>A fair price, paid once. No subscriptions, no ads, no in-app purchases.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <div class="reveal">
-        <div class="kicker">Products</div>
-        <h2>Our work.</h2>
-      </div>
-      <a class="feature-card reveal" href="#ingtype" data-tab="ingtype">
-        <img class="feature-art" src="assets/img/featured-banner.webp" width="1600" height="800" alt="ingtype on iPad and iPhone">
-        <div class="feature-bar">
-          <img src="assets/img/icon-256.png" width="64" height="64" alt="">
-          <div><b>ingtype</b><span>iPad keyboard, iPhone trackpad</span></div>
-          <span class="get">Nov 5</span>
-        </div>
-      </a>
-      <dl class="facts company-facts reveal">
-        <div class="fact"><b>2026</b><span>Founded</span></div>
-        <div class="fact"><b>Seoul</b><span>South Korea</span></div>
-        <div class="fact"><b>0</b><span>Trackers in our apps</span></div>
-        <div class="fact"><b>1</b><span>Product, done properly</span></div>
-      </dl>
-    </div>
-  </section>
+<div class="hero company">
+<div class="wrap company-hero">
+<div class="company-copy">
+<span class="eyebrow reveal" data-i18n="t004"><i></i>Independent software studio · Seoul</span>
+<h1 class="reveal" data-i18n="t005">Small tools,<br/>made with care.</h1>
+<p class="lede reveal" data-i18n="t006">Clapre makes quiet, private software for the Apple devices you already own. One thing at a time, done properly.</p>
+<div class="cta reveal">
+<a class="btn btn-primary" data-i18n="t007" data-tab="ingtype" href="#ingtype">Meet ingtype</a>
+<a class="btn btn-ghost" data-goto="contact" data-i18n="t008" href="#support">Contact Us</a>
 </div>
-
+</div>
+<img alt="Clapre" class="company-logo reveal" height="900" src="assets/img/clapre-logo.png" width="320"/>
+</div>
+</div>
+<section class="verse">
+<div class="wrap reveal">
+<div class="kicker" data-i18n="t009">Our Foundation</div>
+<blockquote data-i18n="t010">“Commit your work to the Lord,<br/>and your plans will be established.”</blockquote>
+<cite data-i18n="t011">Proverbs 16:3</cite>
+<p class="section-lede" data-i18n="t012">Every product starts here. We hand the work over first, then build it as carefully as we know how, and trust the outcome to Him.</p>
+</div>
+</section>
+<section>
+<div class="wrap">
+<div class="reveal">
+<div class="kicker" data-i18n="t013">About</div>
+<h2 data-i18n="t014">What we believe.</h2>
+</div>
+<div class="cards reveal">
+<div class="card"><b data-i18n="t015">Quiet by default</b><p data-i18n="t016">Software should fit into your day without asking for attention. No noise, no nagging, no pop-ups.</p></div>
+<div class="card"><b data-i18n="t017">Private by design</b><p data-i18n="t018">No servers, no accounts, no tracking. What you do on your devices stays on your devices.</p></div>
+<div class="card"><b data-i18n="t019">Pay once, own it</b><p data-i18n="t020">A fair price, paid once. No subscriptions, no ads, no in-app purchases.</p></div>
+</div>
+</div>
+</section>
+<section>
+<div class="wrap">
+<div class="reveal">
+<div class="kicker" data-i18n="t021">Products</div>
+<h2 data-i18n="t022">Our work.</h2>
+</div>
+<a class="feature-card reveal" data-tab="ingtype" href="#ingtype">
+<img alt="ingtype on iPad and iPhone" class="feature-art" height="800" data-l10n-banner="" src="assets/img/featured-banner-en.webp" width="1600"/>
+<div class="feature-bar">
+<img alt="" height="64" src="assets/img/icon-256.png" width="64"/>
+<div><b>ingtype</b><span data-i18n="t023">iPad keyboard, iPhone trackpad</span></div>
+<span class="get" data-i18n="t024">Nov 5</span>
+</div>
+</a>
+<dl class="facts company-facts reveal">
+<div class="fact"><b>2026</b><span data-i18n="t025">Founded</span></div>
+<div class="fact"><b data-i18n="t026">Seoul</b><span data-i18n="t027">South Korea</span></div>
+<div class="fact"><b>0</b><span data-i18n="t028">Trackers in our apps</span></div>
+<div class="fact"><b>1</b><span data-i18n="t029">Product, done properly</span></div>
+</dl>
+</div>
+</section>
+</div>
 <!-- ===== ingtype ===== -->
-<div class="panel" id="tab-ingtype" hidden>
-
-  <!-- 히어로 -->
-  <div class="hero">
-    <div class="wrap">
-      <img class="app-icon reveal" src="assets/img/icon-256.png" width="88" height="88" alt="ingtype">
-      <div class="lockup reveal"><img src="assets/img/clapre-mark-256.png" width="26" height="26" alt=""><span>Clapre</span><i></i><em>PRESENTS</em></div>
-      <h1 class="reveal">
+<div class="panel" hidden="" id="tab-ingtype">
+<!-- 히어로 -->
+<div class="hero">
+<div class="wrap">
+<img alt="ingtype" class="app-icon reveal" height="88" src="assets/img/icon-256.png" width="88"/>
+<div class="lockup reveal"><img alt="" height="26" src="assets/img/clapre-mark-256.png" width="26"/><span>Clapre</span><i></i><em>PRESENTS</em></div>
+<h1 class="reveal" data-i18n="t030">
         Your iPad. A Magic Keyboard.
       </h1>
-      <p class="lede reveal">
+<p class="lede reveal" data-i18n="t031">
         Lay it flat and type with ten fingers. Completely silent. Your iPhone becomes the trackpad.
       </p>
-      <div class="cta reveal">
-        <a class="btn btn-primary" href="#ingtype" data-goto="price" aria-label="App Store">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c-.02-2.3 1.88-3.41 1.97-3.46-1.07-1.57-2.74-1.79-3.33-1.81-1.42-.14-2.77.83-3.49.83-.72 0-1.83-.81-3.01-.79-1.55.02-2.98.9-3.78 2.29-1.61 2.8-.41 6.94 1.16 9.21.77 1.11 1.68 2.36 2.88 2.31 1.16-.05 1.6-.75 3-.75s1.79.75 3.01.72c1.24-.02 2.03-1.13 2.79-2.25.88-1.29 1.24-2.54 1.26-2.6-.03-.01-2.42-.93-2.46-3.69zM14.07 5.85c.64-.77 1.07-1.85.95-2.92-.92.04-2.03.61-2.69 1.38-.59.68-1.11 1.77-.97 2.82 1.02.08 2.07-.52 2.71-1.28z"/></svg>
-          <span>App Store</span><span class="soon">Soon</span>
-        </a>
-        <a class="btn btn-ghost" href="#support" data-goto="start">Get the Mac app (free)</a>
-      </div>
-      <p class="launch reveal">On the App Store · November 5</p>
-      <div class="stage3d reveal"><img src="assets/img/devices-3d.webp" width="1800" height="878" alt="ingtype on an iPad lying flat, with an iPhone as the trackpad"></div>
-      <div class="facts reveal">
-        <div class="fact"><b>Silent</b><span>No key sounds by default</span></div>
-        <div class="fact"><b>Ten fingers</b><span>Resting palms ignored</span></div>
-        <div class="fact"><b>0</b><span>Servers, accounts, ads</span></div>
-        <div class="fact"><b>11" · 13"</b><span>Layout scales to fit</span></div>
-      </div>
-    </div>
-  </div>
-  <!-- 키보드 / 한글 -->
-  <section>
-    <div class="wrap feature">
-      <div class="feature-copy reveal">
-        <div class="kicker">Keyboard</div>
-        <h2>
+<div class="cta reveal">
+<a aria-label="App Store" class="btn btn-primary" data-goto="price" href="#ingtype">
+<svg aria-hidden="true" fill="currentColor" viewbox="0 0 24 24"><path d="M16.37 12.6c-.02-2.3 1.88-3.41 1.97-3.46-1.07-1.57-2.74-1.79-3.33-1.81-1.42-.14-2.77.83-3.49.83-.72 0-1.83-.81-3.01-.79-1.55.02-2.98.9-3.78 2.29-1.61 2.8-.41 6.94 1.16 9.21.77 1.11 1.68 2.36 2.88 2.31 1.16-.05 1.6-.75 3-.75s1.79.75 3.01.72c1.24-.02 2.03-1.13 2.79-2.25.88-1.29 1.24-2.54 1.26-2.6-.03-.01-2.42-.93-2.46-3.69zM14.07 5.85c.64-.77 1.07-1.85.95-2.92-.92.04-2.03.61-2.69 1.38-.59.68-1.11 1.77-.97 2.82 1.02.08 2.07-.52 2.71-1.28z"></path></svg>
+<span data-i18n="t032">App Store</span><span class="soon" data-i18n="t033">Soon</span>
+</a>
+<a class="btn btn-ghost" data-goto="start" data-i18n="t034" href="#support">Get the Mac app (free)</a>
+</div>
+<p class="launch reveal" data-i18n="t035">On the App Store · November 5</p>
+<div class="stage3d reveal"><img alt="ingtype on an iPad lying flat, with an iPhone as the trackpad" height="878" src="assets/img/devices-3d.webp" width="1800"/></div>
+<div class="facts reveal">
+<div class="fact"><b data-i18n="t036">Silent</b><span data-i18n="t037">No key sounds by default</span></div>
+<div class="fact"><b data-i18n="t038">Ten fingers</b><span data-i18n="t039">Resting palms ignored</span></div>
+<div class="fact"><b>0</b><span data-i18n="t040">Servers, accounts, ads</span></div>
+<div class="fact"><b>11" · 13"</b><span data-i18n="t041">Layout scales to fit</span></div>
+</div>
+</div>
+</div>
+<!-- 키보드 / 한글 -->
+<section>
+<div class="wrap feature">
+<div class="feature-copy reveal">
+<div class="kicker" data-i18n="t042">Keyboard</div>
+<h2 data-i18n="t043">
           Feels exactly like a real keyboard.
         </h2>
-        <p class="section-lede">
+<p class="section-lede" data-i18n="t044">
           ingtype sends key positions, not characters. Your Mac does the rest, so every language, shortcut and input method behaves exactly as it does on a physical keyboard.
         </p>
-        <ul>
-          <li><span><b>Zero lag</b> on the same Wi‑Fi</span></li>
-          <li><span><b>Any input method</b>, including Korean, Japanese and Chinese</span></li>
-          <li><span><b>Function row</b> with brightness, volume and media keys</span></li>
-        </ul>
-      </div>
-      <div class="ipad reveal"><img src="assets/img/hangul.webp" width="1600" height="1200" alt="" loading="lazy"></div>
-    </div>
-  </section>
-  <!-- 작은 창 -->
-  <section>
-    <div class="wrap feature flip">
-      <div class="feature-copy reveal">
-        <div class="kicker">Mini window</div>
-        <h2>
-          Eyes on the iPad.<br>Hands stay put.
+<ul>
+<li><span data-i18n="t045"><b>Zero lag</b> on the same Wi‑Fi</span></li>
+<li><span data-i18n="t046"><b>Any input method</b>, including Korean, Japanese and Chinese</span></li>
+<li><span data-i18n="t047"><b>Function row</b> with brightness, volume and media keys</span></li>
+</ul>
+</div>
+<div class="ipad reveal"><img alt="" height="1200" loading="lazy" data-l10n-img="hangul" src="assets/img/hangul-en.webp" width="1600"/></div>
+</div>
+</section>
+<!-- 작은 창 -->
+<section>
+<div class="wrap feature flip">
+<div class="feature-copy reveal">
+<div class="kicker" data-i18n="t048">Mini window</div>
+<h2 data-i18n="t049">
+          Eyes on the iPad.<br/>Hands stay put.
         </h2>
-        <p class="section-lede">
+<p class="section-lede" data-i18n="t050">
           A small window above the keys mirrors any Mac window, live. Open Mac apps or browse the web right there.
         </p>
-      </div>
-      <div class="ipad reveal"><img src="assets/img/miniwindow.webp" width="1600" height="1200" alt="" loading="lazy"></div>
-    </div>
-  </section>
-  <!-- Picture Custom -->
-  <section>
-    <div class="wrap feature">
-      <div class="feature-copy reveal">
-        <div class="kicker">Themes</div>
-        <h2>Five keyboards.<br>Your desk is one.</h2>
-        <p class="section-lede">Basic, Ice, Glass, or All Custom in your own colors. Picture Custom turns a photo of your desk into the backdrop, with depth as you tilt. Tap one to see it.</p>
-        <div class="pets-row">
-          <button type="button" class="theme-pill" data-img="assets/img/hero-ipad.webp" aria-pressed="false">Basic</button><button type="button" class="theme-pill on" data-img="assets/img/picture.webp" aria-pressed="true">Picture Custom</button><button type="button" class="theme-pill" data-img="assets/img/theme-ice.webp" aria-pressed="false">Ice</button><button type="button" class="theme-pill" data-img="assets/img/theme-glass.webp" aria-pressed="false">Glass</button><button type="button" class="theme-pill" data-img="assets/img/theme-allcustom.webp" aria-pressed="false">All Custom</button>
-        </div>
-      </div>
-      <div class="ipad reveal theme-shot is-picture"><img src="assets/img/picture.webp" width="1600" height="1200" alt="" loading="lazy"><span class="add-pic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><circle cx="9" cy="10" r="1.6"/><path d="M21 16l-5-5-7 8"/></svg>ADD PICTURE</span></div>
-    </div>
-  </section>
-  <!-- 아이폰 -->
-  <section>
-    <div class="wrap feature flip">
-      <div class="feature-copy reveal">
-        <div class="kicker">iPhone</div>
-        <h2>
+</div>
+<div class="ipad reveal"><img alt="" height="1200" loading="lazy" src="assets/img/miniwindow.webp" width="1600"/></div>
+</div>
+</section>
+<!-- Picture Custom -->
+<section>
+<div class="wrap feature">
+<div class="feature-copy reveal">
+<div class="kicker" data-i18n="t051">Themes</div>
+<h2 data-i18n="t052">Five keyboards.<br/>Your desk is one.</h2>
+<p class="section-lede" data-i18n="t053">Basic, Ice, Glass, or All Custom in your own colors. Picture Custom turns a photo of your desk into the backdrop, with depth as you tilt. Tap one to see it.</p>
+<div class="pets-row">
+<button aria-pressed="false" class="theme-pill" data-img="assets/img/hero-ipad-en.webp" data-l10n-img="hero-ipad" type="button">Basic</button><button aria-pressed="true" class="theme-pill on" data-img="assets/img/picture-en.webp" data-l10n-img="picture" type="button">Picture Custom</button><button aria-pressed="false" class="theme-pill" data-img="assets/img/theme-ice.webp" type="button">Ice</button><button aria-pressed="false" class="theme-pill" data-img="assets/img/theme-glass.webp" type="button">Glass</button><button aria-pressed="false" class="theme-pill" data-img="assets/img/theme-allcustom.webp" type="button">All Custom</button>
+</div>
+</div>
+<div class="ipad reveal theme-shot is-picture"><img alt="" height="1200" loading="lazy" data-l10n-img="picture" src="assets/img/picture-en.webp" width="1600"/><span aria-hidden="true" class="add-pic"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><rect height="14" rx="3" width="18" x="3" y="5"></rect><circle cx="9" cy="10" r="1.6"></circle><path d="M21 16l-5-5-7 8"></path></svg><span data-i18n="t054">ADD PICTURE</span></span></div>
+</div>
+</section>
+<!-- 아이폰 -->
+<section>
+<div class="wrap feature flip">
+<div class="feature-copy reveal">
+<div class="kicker" data-i18n="t055">iPhone</div>
+<h2 data-i18n="t056">
           Your iPhone is the trackpad.
         </h2>
-        <p class="section-lede">
+<p class="section-lede" data-i18n="t057">
           Tap, two-finger scroll, pinch, drag and three-finger gestures, with haptics on every click. Type on your iPhone keyboard and it lands on the Mac.
         </p>
-        <ul>
-          <li><span><b>Hold with two fingers and tilt</b> to fly across the screen</span></li>
-          <li><span><b>Emoji</b> included</span></li>
-        </ul>
-      </div>
-      <div class="duo reveal">
-        <div class="iphone"><img src="assets/img/phone-keyboard.webp" width="720" height="1564" alt="" loading="lazy"></div>
-        <div class="iphone"><img src="assets/img/phone-picture.webp" width="720" height="1564" alt="" loading="lazy"></div>
-      </div>
-    </div>
-  </section>
-  <!-- 펫 -->
-  <section>
-    <div class="wrap feature">
-      <div class="feature-copy reveal">
-        <div class="kicker">Pets</div>
-        <h2>
-          Little friends<br>on the keys.
+<ul>
+<li><span data-i18n="t058"><b>Hold with two fingers and tilt</b> to fly across the screen</span></li>
+<li><span data-i18n="t059"><b>Emoji</b> included</span></li>
+</ul>
+</div>
+<div class="duo reveal">
+<div class="iphone"><img alt="" height="1564" loading="lazy" data-l10n-img="phone-keyboard" src="assets/img/phone-keyboard-en.webp" width="720"/></div>
+<div class="iphone"><img alt="" height="1564" loading="lazy" data-l10n-img="phone-picture" src="assets/img/phone-picture-en.webp" width="720"/></div>
+</div>
+</div>
+</section>
+<!-- 펫 -->
+<section>
+<div class="wrap feature">
+<div class="feature-copy reveal">
+<div class="kicker" data-i18n="t060">Pets</div>
+<h2 data-i18n="t061">
+          Little friends<br/>on the keys.
         </h2>
-        <p class="section-lede">
+<p class="section-lede" data-i18n="t062">
           32 pixel pets wander a single line above the keys, never in the way. They nap when you rest and hop when you tap.
         </p>
-        <div class="pets-row">
-          <span>32 pets</span><span>Three capsules a day</span><span>Draw your own pet</span>
-        </div>
-      </div>
-      <div class="ipad reveal"><img src="assets/img/pets.webp" width="1600" height="1200" alt="" loading="lazy"></div>
-    </div>
-  </section>
-  <!-- 개인정보 -->
-  <section class="gallery-sec">
-    <div class="wrap reveal">
-      <div class="kicker">App Store</div>
-      <h2>A closer look.</h2>
-    </div>
-    <div class="gallery reveal" tabindex="0" aria-label="App Store screenshots">
-      <img class="pad" width="1100" height="825" src="assets/img/poster-ipad-13-01-keyboard.webp" alt="" loading="lazy">
-      <img class="ph" width="520" height="1130" src="assets/img/poster-iphone-69-01-trackpad.webp" alt="" loading="lazy">
-      <img class="pad" width="1100" height="825" src="assets/img/poster-ipad-13-02-hangul.webp" alt="" loading="lazy">
-      <img class="pad" width="1100" height="825" src="assets/img/poster-ipad-13-03-miniwindow.webp" alt="" loading="lazy">
-      <img class="ph" width="520" height="1130" src="assets/img/poster-iphone-69-02-keyboard.webp" alt="" loading="lazy">
-      <img class="pad" width="1100" height="825" src="assets/img/poster-ipad-13-04-picture.webp" alt="" loading="lazy">
-      <img class="ph" width="520" height="1130" src="assets/img/poster-iphone-69-03-picture.webp" alt="" loading="lazy">
-      <img class="pad" width="1100" height="825" src="assets/img/poster-ipad-13-05-pets.webp" alt="" loading="lazy">
-      <img class="ph" width="520" height="1130" src="assets/img/poster-iphone-69-04-pairing.webp" alt="" loading="lazy">
-      <img class="pad" width="1100" height="825" src="assets/img/poster-ipad-13-07-private.webp" alt="" loading="lazy">
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <div class="privacy-band reveal">
-        <div class="kicker">Privacy</div>
-        <h2>
+<div class="pets-row">
+<span data-i18n="t063">32 pets</span><span data-i18n="t064">Three capsules a day</span><span data-i18n="t065">Draw your own pet</span>
+</div>
+</div>
+<div class="ipad reveal"><img alt="" height="1200" loading="lazy" data-l10n-img="pets" src="assets/img/pets-en.webp" width="1600"/></div>
+</div>
+</section>
+<!-- 개인정보 -->
+<section class="gallery-sec">
+<div class="wrap reveal">
+<div class="kicker" data-i18n="t066">App Store</div>
+<h2 data-i18n="t067">A closer look.</h2>
+</div>
+<div aria-label="App Store screenshots" class="gallery reveal" tabindex="0">
+<img alt="" class="pad" height="825" loading="lazy" data-poster="ipad-13-01-keyboard" src="assets/img/posters/en/ipad-13-01-keyboard.webp" width="1100"/>
+<img alt="" class="ph" height="1130" loading="lazy" data-poster="iphone-69-01-trackpad" src="assets/img/posters/en/iphone-69-01-trackpad.webp" width="520"/>
+<img alt="" class="pad" height="825" loading="lazy" data-poster="ipad-13-02-hangul" src="assets/img/posters/en/ipad-13-02-hangul.webp" width="1100"/>
+<img alt="" class="pad" height="825" loading="lazy" data-poster="ipad-13-03-miniwindow" src="assets/img/posters/en/ipad-13-03-miniwindow.webp" width="1100"/>
+<img alt="" class="ph" height="1130" loading="lazy" data-poster="iphone-69-02-keyboard" src="assets/img/posters/en/iphone-69-02-keyboard.webp" width="520"/>
+<img alt="" class="pad" height="825" loading="lazy" data-poster="ipad-13-04-picture" src="assets/img/posters/en/ipad-13-04-picture.webp" width="1100"/>
+<img alt="" class="ph" height="1130" loading="lazy" data-poster="iphone-69-03-picture" src="assets/img/posters/en/iphone-69-03-picture.webp" width="520"/>
+<img alt="" class="pad" height="825" loading="lazy" data-poster="ipad-13-05-pets" src="assets/img/posters/en/ipad-13-05-pets.webp" width="1100"/>
+<img alt="" class="ph" height="1130" loading="lazy" data-poster="iphone-69-04-pairing" src="assets/img/posters/en/iphone-69-04-pairing.webp" width="520"/>
+<img alt="" class="pad" height="825" loading="lazy" data-poster="ipad-13-07-private" src="assets/img/posters/en/ipad-13-07-private.webp" width="1100"/>
+</div>
+</section>
+<section>
+<div class="wrap">
+<div class="privacy-band reveal">
+<div class="kicker" data-i18n="t068">Privacy</div>
+<h2 data-i18n="t069">
           No server. No account. No tracking.
         </h2>
-        <p class="section-lede">
+<p class="section-lede" data-i18n="t070">
           Your devices talk directly over Wi‑Fi, encrypted. We can't see what you type, because it never reaches us.
         </p>
-        <div class="cards">
-          <div class="card"><b>6-digit pairing</b><p>Pair once with the code on your Mac. Only paired devices can connect.</p></div>
-          <div class="card"><b>Nothing stored</b><p>Keystrokes are handled the moment they arrive and are never saved.</p></div>
-          <div class="card"><b>No ads, no analytics</b><p>Not a single tracking SDK. App Store privacy label: Data Not Collected.</p></div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- 시작하기 -->
-  <section>
-    <div class="wrap">
-      <div class="reveal">
-        <div class="kicker">Get started</div>
-        <h2>One minute to set up.</h2>
-      </div>
-      <div class="steps reveal">
-        <div class="step"><b>Install the Mac app</b><p>Free. It sits quietly in your menu bar.</p></div>
-        <div class="step"><b>Enter the 6-digit code</b><p>Mac menu → Pair New Device. Type it on your iPad or iPhone.</p></div>
-        <div class="step"><b>Done</b><p>From then on it reconnects on its own.</p></div>
-      </div>
-    </div>
-  </section>
-  <!-- 가격 -->
-  <section class="price" id="price">
-    <div class="wrap reveal">
-      <div class="kicker">Price</div>
-      <div class="amount">One-time</div>
-      <p class="section-lede" style="margin:0 auto">
+<div class="cards">
+<div class="card"><b data-i18n="t071">6-digit pairing</b><p data-i18n="t072">Pair once with the code on your Mac. Only paired devices can connect.</p></div>
+<div class="card"><b data-i18n="t073">Nothing stored</b><p data-i18n="t074">Keystrokes are handled the moment they arrive and are never saved.</p></div>
+<div class="card"><b data-i18n="t075">No ads, no analytics</b><p data-i18n="t076">Not a single tracking SDK. App Store privacy label: Data Not Collected.</p></div>
+</div>
+</div>
+</div>
+</section>
+<!-- 시작하기 -->
+<section>
+<div class="wrap">
+<div class="reveal">
+<div class="kicker" data-i18n="t077">Get started</div>
+<h2 data-i18n="t078">One minute to set up.</h2>
+</div>
+<div class="steps reveal">
+<div class="step"><b data-i18n="t079">Install the Mac app</b><p data-i18n="t080">Free. It sits quietly in your menu bar.</p></div>
+<div class="step"><b data-i18n="t081">Enter the 6-digit code</b><p data-i18n="t082">Mac menu → Pair New Device. Type it on your iPad or iPhone.</p></div>
+<div class="step"><b data-i18n="t083">Done</b><p data-i18n="t084">From then on it reconnects on its own.</p></div>
+</div>
+</div>
+</section>
+<!-- 가격 -->
+<section class="price" id="price">
+<div class="wrap reveal">
+<div class="kicker" data-i18n="t085">Price</div>
+<div class="amount" data-i18n="t086">One-time</div>
+<p class="section-lede" data-i18n="t087" style="margin:0 auto">
         Buy once for both iPad and iPhone. No subscription, no in-app purchases. The Mac app is free.
       </p>
-      <div class="cta">
-        <a class="btn btn-primary" href="#ingtype" data-goto="price">Launching Nov 5</a>
-      </div>
-    </div>
-  </section>
-
+<div class="cta">
+<a class="btn btn-primary" data-goto="price" data-i18n="t088" href="#ingtype">Launching Nov 5</a>
 </div>
-
+</div>
+</section>
+</div>
 <!-- ===== Support ===== -->
-<div class="panel doc" id="tab-support" hidden>
-  <div class="wrap">
-
-    <h1>Support</h1>
-    <p class="meta">ingtype by Clapre</p>
-
-    <h2 id="start">Getting Started</h2>
-    <ol>
-      <li><strong>Install the Mac app.</strong> Open <code>ingtype.dmg</code> from the download link on this page and move the app to Applications. On first launch it asks for Accessibility permission: System Settings → Privacy &amp; Security → Accessibility → turn on ingtype.</li>
-      <li><strong>Pair.</strong> Click the ingtype icon in the menu bar → <strong>Pair New Device</strong>. A 6-digit code appears.</li>
-      <li>Open the app on your iPhone or iPad, choose your Mac and enter the code. After that it reconnects on its own.</li>
-    </ol>
-    <p>The Mac app is free. The download link goes up here on launch day (Nov 5). Your Mac and iPhone/iPad must be on the same Wi‑Fi.</p>
-
-    <h2>iPad as a Keyboard</h2>
-    <ul>
-      <li>Lay the iPad flat and rest your wrists on the desk. iPadOS ignores touches near a resting wrist.</li>
-      <li>In Settings → Multitasking &amp; Gestures, turn off four/five-finger gestures so apps don't switch while you type.</li>
-      <li><strong>Modifier keys</strong> (shift, command…): tap once to apply to the next key, or hold while typing.</li>
-      <li>Hold <strong>fn</strong> and tap the top row for F1–F12.</li>
-      <li>For English-only legends: Settings → Keyboard → Key Legends → English Only.</li>
-    </ul>
-
-    <h2>iPhone as a Trackpad</h2>
-    <table>
-      <tr><th>Gesture</th><th>Action</th></tr>
-      <tr><td>One-finger move</td><td>Move the pointer</td></tr>
-      <tr><td>One-finger tap</td><td>Click</td></tr>
-      <tr><td>Two-finger tap</td><td>Right-click</td></tr>
-      <tr><td>Two-finger swipe</td><td>Scroll</td></tr>
-      <tr><td>Long press, then move</td><td>Drag</td></tr>
-      <tr><td>Pinch</td><td>Zoom</td></tr>
-      <tr><td>Three-finger swipe</td><td>Switch desktops, Mission Control</td></tr>
-      <tr><td>Hold two fingers and tilt</td><td>Air mouse (turn on in Settings)</td></tr>
-    </table>
-    <p>The air mouse covers long moves; the trackpad handles fine control. Adjust sensitivity in Settings. The iPhone keyboard mode can send emoji too.</p>
-
-    <h2>FAQ</h2>
-    <h3>My Mac doesn't show up.</h3>
-    <ul>
-      <li>Make sure both devices are on the same Wi‑Fi. Guest, school and office networks often block device-to-device traffic.</li>
-      <li>If so, turn on your iPhone's Personal Hotspot and join your Mac and iPad to it.</li>
-      <li>Still missing? <strong>Connect by address</strong>: enter the address shown in the ingtype menu on your Mac (e.g. 172.20.10.2) under ‘Connect by Address…’.</li>
-      <li>Check that the Mac app is running (menu bar icon).</li>
-      <li>On iPhone/iPad, check Settings → Privacy &amp; Security → Local Network → ingtype.</li>
-    </ul>
-    <h3>Connected, but nothing is typed.</h3>
-    <p>Check the Accessibility permission on the Mac. After an update you may need to toggle it off and on.</p>
-    <h3>The code doesn't work.</h3>
-    <p>A code is valid for 2 minutes, and 5 wrong attempts require a new one. Close and reopen the pairing window on the Mac.</p>
-    <h3>I hear key sounds.</h3>
-    <p>The app is silent by default. Check that Key Click Sound is off in Settings.</p>
-    <h3>Does one purchase cover all my devices?</h3>
-    <p>Yes. iPhone and iPad share one app under your Apple ID, and the Mac app is free.</p>
-
-    <h2 id="contact">Contact Us</h2>
-    <p>Send a question, a bug or an idea. Replies usually take 2–3 days.</p>
-    <form class="contact" id="contact-form">
-      <div class="row">
-        <label>Topic
+<div class="panel doc" hidden="" id="tab-support">
+<div class="wrap">
+<h1 data-i18n="t089">Support</h1>
+<p class="meta" data-i18n="t090">ingtype by Clapre</p>
+<h2 data-i18n="t091" id="start">Getting Started</h2>
+<ol>
+<li data-i18n="t092"><strong>Install the Mac app.</strong> Open <code>ingtype.dmg</code> from the download link on this page and move the app to Applications. On first launch it asks for Accessibility permission: System Settings → Privacy &amp; Security → Accessibility → turn on ingtype.</li>
+<li data-i18n="t093"><strong>Pair.</strong> Click the ingtype icon in the menu bar → <strong>Pair New Device</strong>. A 6-digit code appears.</li>
+<li data-i18n="t094">Open the app on your iPhone or iPad, choose your Mac and enter the code. After that it reconnects on its own.</li>
+</ol>
+<p data-i18n="t095">The Mac app is free. The download link goes up here on launch day (Nov 5). Your Mac and iPhone/iPad must be on the same Wi‑Fi.</p>
+<h2 data-i18n="t096">iPad as a Keyboard</h2>
+<ul>
+<li data-i18n="t097">Lay the iPad flat and rest your wrists on the desk. iPadOS ignores touches near a resting wrist.</li>
+<li data-i18n="t098">In Settings → Multitasking &amp; Gestures, turn off four/five-finger gestures so apps don't switch while you type.</li>
+<li data-i18n="t099"><strong>Modifier keys</strong> (shift, command…): tap once to apply to the next key, or hold while typing.</li>
+<li data-i18n="t100">Hold <strong>fn</strong> and tap the top row for F1–F12.</li>
+<li data-i18n="t101">For English-only legends: Settings → Keyboard → Key Legends → English Only.</li>
+</ul>
+<h2 data-i18n="t102">iPhone as a Trackpad</h2>
+<table>
+<tr><th data-i18n="t103">Gesture</th><th data-i18n="t104">Action</th></tr>
+<tr><td data-i18n="t105">One-finger move</td><td data-i18n="t106">Move the pointer</td></tr>
+<tr><td data-i18n="t107">One-finger tap</td><td data-i18n="t108">Click</td></tr>
+<tr><td data-i18n="t109">Two-finger tap</td><td data-i18n="t110">Right-click</td></tr>
+<tr><td data-i18n="t111">Two-finger swipe</td><td data-i18n="t112">Scroll</td></tr>
+<tr><td data-i18n="t113">Long press, then move</td><td data-i18n="t114">Drag</td></tr>
+<tr><td data-i18n="t115">Pinch</td><td data-i18n="t116">Zoom</td></tr>
+<tr><td data-i18n="t117">Three-finger swipe</td><td data-i18n="t118">Switch desktops, Mission Control</td></tr>
+<tr><td data-i18n="t119">Hold two fingers and tilt</td><td data-i18n="t120">Air mouse (turn on in Settings)</td></tr>
+</table>
+<p data-i18n="t121">The air mouse covers long moves; the trackpad handles fine control. Adjust sensitivity in Settings. The iPhone keyboard mode can send emoji too.</p>
+<h2 data-i18n="t122">FAQ</h2>
+<h3 data-i18n="t123">My Mac doesn't show up.</h3>
+<ul>
+<li data-i18n="t124">Make sure both devices are on the same Wi‑Fi. Guest, school and office networks often block device-to-device traffic.</li>
+<li data-i18n="t125">If so, turn on your iPhone's Personal Hotspot and join your Mac and iPad to it.</li>
+<li data-i18n="t126">Still missing? <strong>Connect by address</strong>: enter the address shown in the ingtype menu on your Mac (e.g. 172.20.10.2) under ‘Connect by Address…’.</li>
+<li data-i18n="t127">Check that the Mac app is running (menu bar icon).</li>
+<li data-i18n="t128">On iPhone/iPad, check Settings → Privacy &amp; Security → Local Network → ingtype.</li>
+</ul>
+<h3 data-i18n="t129">Connected, but nothing is typed.</h3>
+<p data-i18n="t130">Check the Accessibility permission on the Mac. After an update you may need to toggle it off and on.</p>
+<h3 data-i18n="t131">The code doesn't work.</h3>
+<p data-i18n="t132">A code is valid for 2 minutes, and 5 wrong attempts require a new one. Close and reopen the pairing window on the Mac.</p>
+<h3 data-i18n="t133">I hear key sounds.</h3>
+<p data-i18n="t134">The app is silent by default. Check that Key Click Sound is off in Settings.</p>
+<h3 data-i18n="t135">Does one purchase cover all my devices?</h3>
+<p data-i18n="t136">Yes. iPhone and iPad share one app under your Apple ID, and the Mac app is free.</p>
+<h2 data-i18n="t137" id="contact">Contact Us</h2>
+<p data-i18n="t138">Send a question, a bug or an idea. Replies usually take 2–3 days.</p>
+<form class="contact" id="contact-form">
+<div class="row">
+<label><span data-i18n="t139">Topic</span>
           <select name="topic">
-            <option>Question</option><option>Bug Report</option><option>Connection Problem</option><option>Feature Idea</option><option>Other</option>
-          </select>
-        </label>
-        <label>Devices <input name="devices" placeholder="e.g. iPad Air 11&quot;, MacBook Air M2"></label>
-      </div>
-      <label>Message <textarea name="message" rows="6" required placeholder="What happened, and what did you expect?"></textarea></label>
-      <div class="contact-actions">
-        <button class="btn btn-primary" type="submit">Send by Email</button>
-        <span>Opens your mail app, addressed to <a href="mailto:clapre.app@gmail.com">clapre.app@gmail.com</a></span>
-      </div>
-    </form>
-    
-  </div>
+<option data-i18n="t202">Question</option><option data-i18n="t203">Bug Report</option><option data-i18n="t204">Connection Problem</option><option data-i18n="t205">Feature Idea</option><option data-i18n="t206">Other</option>
+</select>
+</label>
+<label><span data-i18n="t140">Devices</span> <input data-i18n-ph="t200" name="devices" placeholder='e.g. iPad Air 11", MacBook Air M2'/></label>
 </div>
-
+<label><span data-i18n="t141">Message</span> <textarea data-i18n-ph="t201" name="message" placeholder="What happened, and what did you expect?" required="" rows="6"></textarea></label>
+<div class="contact-actions">
+<button class="btn btn-primary" data-i18n="t142" type="submit">Send by Email</button>
+<span data-i18n="t143">Opens your mail app, addressed to <a href="mailto:clapre.app@gmail.com">clapre.app@gmail.com</a></span>
+</div>
+</form>
+</div>
+</div>
 <!-- ===== Privacy ===== -->
-<div class="panel doc" id="tab-privacy" hidden>
-  <div class="wrap">
-
-    <h1>Privacy Policy</h1>
-    <p class="meta">Last updated October 21, 2026 · ingtype by Clapre</p>
-    <p class="lead">ingtype does not collect any personal information.</p>
-
-    <h2>1. Information We Collect</h2>
-    <p>None. ingtype does not:</p>
-    <ul>
-      <li>create accounts, require sign-in, or collect identifiers such as email or phone number</li>
-      <li>store or transmit the text you type, your keystrokes, or your pointer movements</li>
-      <li>use advertising, analytics, or tracking SDKs</li>
-      <li>talk to any external server (there is no developer server)</li>
-    </ul>
-
-    <h2>2. Device-to-Device Communication</h2>
-    <p>ingtype only talks directly between your iPhone/iPad and your Mac on the same network.</p>
-    <ul>
-      <li>Traffic is encrypted with TLS. Only devices paired with the 6-digit code shown on the Mac can connect.</li>
-      <li>Keystrokes are sent as key positions (key codes), not characters. They are handled as input the moment they reach the Mac and are never stored.</li>
-      <li>When the iPhone keyboard sends a character with no key position, such as an emoji, the Mac briefly places it on the clipboard, pastes it, then restores your previous clipboard.</li>
-      <li>If you choose ‘Mac Screen’ in the iPad mini window, only the one Mac window (or display) you picked is compressed into video and sent to that iPad over the same encrypted connection. It stops when you close the mini window or disconnect, and nothing is stored. The Mac menu bar shows it while sharing, with a way to stop at once.</li>
-      <li>Nothing is sent to the developer or third parties. Websites you open yourself in the mini window talk to those sites like any browser.</li>
-    </ul>
-
-    <h2>3. Information Stored on Your Devices</h2>
-    <table>
-      <tr><th>Data</th><th>Where</th><th>Purpose</th></tr>
-      <tr><td>Paired Mac's name, identifier and connection secret</td><td>iPhone/iPad Keychain</td><td>Reconnect without a code</td></tr>
-      <tr><td>Paired iPhone/iPad's name, identifier and connection secret</td><td>Mac Keychain</td><td>Allow only paired devices</td></tr>
-      <tr><td>Settings (sensitivity, theme, pets, click sound…)</td><td>On device</td><td>App preferences</td></tr>
-      <tr><td>Picture Custom photos (up to 5 you take or choose)</td><td>iPhone/iPad app folder, excluded from backup</td><td>Keyboard and trackpad background. Never transmitted; delete in Settings</td></tr>
-      <tr><td>Pets you draw</td><td>iPhone/iPad app folder, excluded from backup</td><td>On-screen pets. Never transmitted; delete in Settings</td></tr>
-      <tr><td>Mini window website data (cookies, cache)</td><td>On iPhone/iPad</td><td>Keeps you signed in. Delete in Settings</td></tr>
-    </table>
-    <p>This data is never sent to the developer or any third party. Delete it any time with ‘Forget’ in either app; it is removed when you delete the app.</p>
-
-    <h2>4. System Permissions</h2>
-    <ul>
-      <li><strong>Local Network</strong>: only to find and connect to your Mac.</li>
-      <li><strong>Camera (optional)</strong>: only to photograph your desk for Picture Custom. ‘Choose from Photos’ receives only the photos you pick, without library access.</li>
-      <li><strong>Motion sensors</strong>: on iPad, to shift the background as you tilt it; on iPhone, only for the air mouse while you hold two fingers down (when turned on). Not recorded or sent anywhere but your Mac.</li>
-      <li><strong>Screen Recording (Mac, optional)</strong>: only to show a Mac window in the iPad mini window. Only the window you pick, only while requested, nothing stored, no audio.</li>
-      <li><strong>Accessibility (Mac)</strong>: required to deliver input to the Mac. Not used to read or record screen content.</li>
-    </ul>
-
-    <h2>5. Children's Privacy</h2>
-    <p>ingtype collects no personal information from anyone, including children.</p>
-
-    <h2>6. Changes</h2>
-    <p>Changes will be posted on this page and in the app's release notes.</p>
-
-    <h2>7. Contact</h2>
-    <p>Clapre · <a href="mailto:clapre.app@gmail.com">clapre.app@gmail.com</a></p>
-    
-  </div>
+<div class="panel doc" hidden="" id="tab-privacy">
+<div class="wrap">
+<h1 data-i18n="t144">Privacy Policy</h1>
+<p class="meta" data-i18n="t145">Last updated October 21, 2026 · ingtype by Clapre</p>
+<p class="lead" data-i18n="t146">ingtype does not collect any personal information.</p>
+<h2 data-i18n="t147">1. Information We Collect</h2>
+<p data-i18n="t148">None. ingtype does not:</p>
+<ul>
+<li data-i18n="t149">create accounts, require sign-in, or collect identifiers such as email or phone number</li>
+<li data-i18n="t150">store or transmit the text you type, your keystrokes, or your pointer movements</li>
+<li data-i18n="t151">use advertising, analytics, or tracking SDKs</li>
+<li data-i18n="t152">talk to any external server (there is no developer server)</li>
+</ul>
+<h2 data-i18n="t153">2. Device-to-Device Communication</h2>
+<p data-i18n="t154">ingtype only talks directly between your iPhone/iPad and your Mac on the same network.</p>
+<ul>
+<li data-i18n="t155">Traffic is encrypted with TLS. Only devices paired with the 6-digit code shown on the Mac can connect.</li>
+<li data-i18n="t156">Keystrokes are sent as key positions (key codes), not characters. They are handled as input the moment they reach the Mac and are never stored.</li>
+<li data-i18n="t157">When the iPhone keyboard sends a character with no key position, such as an emoji, the Mac briefly places it on the clipboard, pastes it, then restores your previous clipboard.</li>
+<li data-i18n="t158">If you choose ‘Mac Screen’ in the iPad mini window, only the one Mac window (or display) you picked is compressed into video and sent to that iPad over the same encrypted connection. It stops when you close the mini window or disconnect, and nothing is stored. The Mac menu bar shows it while sharing, with a way to stop at once.</li>
+<li data-i18n="t159">Nothing is sent to the developer or third parties. Websites you open yourself in the mini window talk to those sites like any browser.</li>
+</ul>
+<h2 data-i18n="t160">3. Information Stored on Your Devices</h2>
+<table>
+<tr><th data-i18n="t161">Data</th><th data-i18n="t162">Where</th><th data-i18n="t163">Purpose</th></tr>
+<tr><td data-i18n="t164">Paired Mac's name, identifier and connection secret</td><td data-i18n="t165">iPhone/iPad Keychain</td><td data-i18n="t166">Reconnect without a code</td></tr>
+<tr><td data-i18n="t167">Paired iPhone/iPad's name, identifier and connection secret</td><td data-i18n="t168">Mac Keychain</td><td data-i18n="t169">Allow only paired devices</td></tr>
+<tr><td data-i18n="t170">Settings (sensitivity, theme, pets, click sound…)</td><td data-i18n="t171">On device</td><td data-i18n="t172">App preferences</td></tr>
+<tr><td data-i18n="t173">Picture Custom photos (up to 5 you take or choose)</td><td data-i18n="t174">iPhone/iPad app folder, excluded from backup</td><td data-i18n="t175">Keyboard and trackpad background. Never transmitted; delete in Settings</td></tr>
+<tr><td data-i18n="t176">Pets you draw</td><td data-i18n="t177">iPhone/iPad app folder, excluded from backup</td><td data-i18n="t178">On-screen pets. Never transmitted; delete in Settings</td></tr>
+<tr><td data-i18n="t179">Mini window website data (cookies, cache)</td><td data-i18n="t180">On iPhone/iPad</td><td data-i18n="t181">Keeps you signed in. Delete in Settings</td></tr>
+</table>
+<p data-i18n="t182">This data is never sent to the developer or any third party. Delete it any time with ‘Forget’ in either app; it is removed when you delete the app.</p>
+<h2 data-i18n="t183">4. System Permissions</h2>
+<ul>
+<li data-i18n="t184"><strong>Local Network</strong>: only to find and connect to your Mac.</li>
+<li data-i18n="t185"><strong>Camera (optional)</strong>: only to photograph your desk for Picture Custom. ‘Choose from Photos’ receives only the photos you pick, without library access.</li>
+<li data-i18n="t186"><strong>Motion sensors</strong>: on iPad, to shift the background as you tilt it; on iPhone, only for the air mouse while you hold two fingers down (when turned on). Not recorded or sent anywhere but your Mac.</li>
+<li data-i18n="t187"><strong>Screen Recording (Mac, optional)</strong>: only to show a Mac window in the iPad mini window. Only the window you pick, only while requested, nothing stored, no audio.</li>
+<li data-i18n="t188"><strong>Accessibility (Mac)</strong>: required to deliver input to the Mac. Not used to read or record screen content.</li>
+</ul>
+<h2 data-i18n="t189">5. Children's Privacy</h2>
+<p data-i18n="t190">ingtype collects no personal information from anyone, including children.</p>
+<h2 data-i18n="t191">6. Changes</h2>
+<p data-i18n="t192">Changes will be posted on this page and in the app's release notes.</p>
+<h2 data-i18n="t193">7. Contact</h2>
+<p data-i18n="t194">Clapre · <a href="mailto:clapre.app@gmail.com">clapre.app@gmail.com</a></p>
+</div>
 </div>
 </main>
-
 <footer>
-  <div class="wrap">
-    <span>© 2026 Clapre</span>
-    <a href="#support" data-goto="contact">Contact Us</a>
-    <nav>
-      <a href="#ingtype" data-tab="ingtype">ingtype</a>
-      <a href="#support" data-tab="support">Support</a>
-      <a href="#privacy" data-tab="privacy">Privacy Policy</a>
-    </nav>
-  </div>
-  <div class="wrap legal">Clapre · Representative: Lu Min Kim · Business Registration No. 361-44-01378 · <a href="mailto:clapre.app@gmail.com">clapre.app@gmail.com</a></div>
+<div class="wrap">
+<span data-i18n="t195">© 2026 Clapre</span>
+<a data-goto="contact" data-i18n="t196" href="#support">Contact Us</a>
+<nav>
+<a data-tab="ingtype" href="#ingtype">ingtype</a>
+<a data-i18n="t197" data-tab="support" href="#support">Support</a>
+<a data-i18n="t198" data-tab="privacy" href="#privacy">Privacy Policy</a>
+</nav>
+</div>
+<div class="wrap legal" data-i18n="t199">Clapre · Representative: Lu Min Kim · Business Registration No. 361-44-01378 · <a href="mailto:clapre.app@gmail.com">clapre.app@gmail.com</a></div>
 </footer>
 </body>
 </html>

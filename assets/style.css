@@ -368,3 +368,30 @@ footer .legal { margin-top: 18px; font-size: 12.5px; color: var(--ink-3); opacit
   -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); box-shadow: 0 10px 30px rgba(0,0,0,.25); pointer-events: none; }
 .add-pic svg { width: 1.5em; height: 1.5em; }
 .theme-shot.is-picture .add-pic { display: inline-flex; }
+
+/* ---------- 언어 ---------- */
+.lang-pick { position: relative; display: inline-flex; align-items: center; gap: 6px; color: var(--ink-2); font-size: 14px;
+  padding: 6px 10px; border-radius: 999px; border: 1px solid var(--line); cursor: pointer; }
+.lang-pick:hover { color: var(--ink); border-color: rgba(255,255,255,.22); }
+.lang-pick svg { width: 16px; height: 16px; flex: none; }
+.lang-select { appearance: none; -webkit-appearance: none; background: transparent; border: 0; color: inherit; font: 600 13px var(--font); cursor: pointer; padding-right: 2px; }
+.lang-select:focus { outline: none; }
+.lang-select option { color: #111; }
+html[lang="ko"] body { word-break: keep-all; }
+html[lang="ja"] body { font-family: "Pretendard Variable", Pretendard, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", sans-serif; line-break: strict; }
+html[lang="zh-Hans"] body { font-family: "Pretendard Variable", Pretendard, "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif; line-break: strict; }
+html[lang="ja"] h1, html[lang="ja"] h2, html[lang="zh-Hans"] h1, html[lang="zh-Hans"] h2, html[lang="ja"] blockquote, html[lang="zh-Hans"] blockquote { letter-spacing: -0.01em; }
+html[lang="de"] h1, html[lang="de"] h2, html[lang="fr"] h1, html[lang="es"] h1 { hyphens: auto; }
+@media (max-width: 880px) { .lang-pick { padding: 5px 8px; } .lang-pick svg { display: none; } }
+/* 중국어·일본어: ch 단위 폭 제한이 한자 기준으로 너무 좁아서 풀고, 구 단위로 줄바꿈 */
+html[lang="ja"] :is(h1, h2, blockquote), html[lang="zh-Hans"] :is(h1, h2, blockquote) { max-width: 20em !important; word-break: auto-phrase; }
+html[lang="ja"] .company-hero h1, html[lang="zh-Hans"] .company-hero h1 { max-width: 9em !important; }
+@media (max-width: 880px) {
+  .nav .wrap { gap: 8px; }
+  .tabs { flex: 1; min-width: 0; overflow-x: auto; scrollbar-width: none; -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent); mask-image: linear-gradient(90deg, #000 85%, transparent); }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tabs a { white-space: nowrap; flex: none; }
+  .lang-pick { width: 34px; height: 34px; padding: 0; justify-content: center; flex: none; }
+  .lang-pick svg { display: block; width: 18px; height: 18px; }
+  .lang-select { position: absolute; inset: 0; opacity: 0; width: 100%; }
+}
