@@ -396,3 +396,8 @@ html[lang="ja"] .company-hero h1, html[lang="zh-Hans"] .company-hero h1 { max-wi
   .lang-select { position: absolute; inset: 0; opacity: 0; width: 100%; }
 }
 .nw { white-space: nowrap; }
+/* 프레스 키트 */
+.press-dl { border: 0; margin-top: 8px; }
+.press-banner { width: 100%; height: auto; border-radius: 20px; margin: 28px 0 8px; border: 1px solid var(--line); }
+.doc table th { white-space: nowrap; width: 1%; padding-right: 28px; }
+.doc a.btn-primary { color: #111; text-decoration: none; }

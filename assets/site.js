@@ -1,6 +1,6 @@
 // 탭(해시로 전환, 새로 고침 없음), 언어(7개), 문의 메일 작성, 스크롤 나타나기.
 (function () {
-  var TABS = ["clapre", "ingtype", "support", "privacy"];
+  var TABS = ["clapre", "ingtype", "support", "privacy", "press"];
   var LANGS = ["en", "ko", "ja", "de", "zh-Hans", "es", "fr"];
   var lang = "en";
 
@@ -47,7 +47,7 @@
   }
 
   function setTitle(tab) {
-    document.title = tab === "clapre" ? "Clapre" : ({ ingtype: "ingtype", support: t("t089", "Support"), privacy: t("t198", "Privacy Policy") })[tab] + " — Clapre";
+    document.title = tab === "clapre" ? "Clapre" : ({ ingtype: "ingtype", support: t("t089", "Support"), privacy: t("t198", "Privacy Policy"), press: t("t207", "Press Kit") })[tab] + " — Clapre";
   }
 
   function show(tab, targetId) {
