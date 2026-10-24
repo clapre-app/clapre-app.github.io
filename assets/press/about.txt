@@ -8,7 +8,7 @@ Silent by default. No server, no account, no tracking: devices talk directly ove
 
 Platforms: iPad, iPhone (iPadOS/iOS 17+), free companion app for Mac (macOS 14+)
 Price: one-time purchase, no subscription, no in-app purchases
-Release: November 5, 2026
+Release: November 10, 2026
 Developer: Clapre, Seoul, South Korea
 Contact: clapre.app@gmail.com
 Website: https://clapre-app.github.io
