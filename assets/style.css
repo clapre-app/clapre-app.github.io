@@ -401,3 +401,15 @@ html[lang="ja"] .company-hero h1, html[lang="zh-Hans"] .company-hero h1 { max-wi
 .press-banner { width: 100%; height: auto; border-radius: 20px; margin: 28px 0 8px; border: 1px solid var(--line); }
 .doc table th { white-space: nowrap; width: 1%; padding-right: 28px; }
 .doc a.btn-primary { color: #111; text-decoration: none; }
+/* 개발 중 예고 */
+.next-up { padding-top: 0; }
+.next-card { position: relative; text-align: center; padding: 64px 32px; border-radius: 32px; overflow: hidden;
+  border: 1px dashed rgba(255,255,255,.22); background: radial-gradient(ellipse 70% 90% at 50% 0%, rgba(240,150,60,.14), rgba(240,150,60,0) 70%), var(--card); }
+.next-card h2 { margin: 18px auto 12px; }
+.next-card .section-lede { margin: 0 auto; }
+.next-note { margin: 18px 0 0; color: var(--amber); font-weight: 600; font-size: 15px; }
+.dev-pill { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border-radius: 999px; font-size: 13px; font-weight: 700;
+  letter-spacing: .06em; text-transform: uppercase; color: var(--ink); background: rgba(255,255,255,.08); border: 1px solid var(--line); }
+.dev-pill i { width: 7px; height: 7px; border-radius: 50%; background: var(--amber); box-shadow: 0 0 10px var(--amber); animation: devpulse 1.8s ease-in-out infinite; }
+@keyframes devpulse { 50% { opacity: .35; } }
+@media (prefers-reduced-motion: reduce) { .dev-pill i { animation: none; } }
