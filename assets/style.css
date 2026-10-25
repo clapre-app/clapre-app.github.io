@@ -402,7 +402,7 @@ html[lang="ja"] .company-hero h1, html[lang="zh-Hans"] .company-hero h1 { max-wi
 .doc table th { white-space: nowrap; width: 1%; padding-right: 28px; }
 .doc a.btn-primary { color: #111; text-decoration: none; }
 /* 개발 중 예고 */
-.next-up { padding-top: 0; }
+.next-up { padding-top: 64px; }   /* 시작하기 카드와 붙지 않게 */
 .next-card { position: relative; text-align: center; padding: 64px 32px; border-radius: 32px; overflow: hidden;
   border: 1px dashed rgba(255,255,255,.22); background: radial-gradient(ellipse 70% 90% at 50% 0%, rgba(240,150,60,.14), rgba(240,150,60,0) 70%), var(--card); }
 .next-card h2 { margin: 18px auto 12px; }
