@@ -156,7 +156,7 @@
 "t155": "Traffic is encrypted with TLS. Only devices paired with the 6-digit code shown on the Mac can connect.",
 "t156": "Keystrokes are sent as key positions (key codes), not characters. They are handled as input the moment they reach the Mac and are never stored.",
 "t157": "When the iPhone keyboard sends a character with no key position, such as an emoji, the Mac briefly places it on the clipboard, pastes it, then restores your previous clipboard.",
-"t158": "If you choose ‘Mac Screen’ in the iPad mini window, only the one Mac window (or display) you picked is compressed into video and sent to that iPad over the same encrypted connection. It stops when you close the mini window or disconnect, and nothing is stored. The Mac menu bar shows it while sharing, with a way to stop at once.",
+"t158": "If you choose ‘Mac Screen’ in the iPad mini window, only the one Mac window (or display) you picked is compressed into video and sent to that iPad over the same encrypted connection. It stops when you close the mini window or disconnect, and nothing is stored. The Mac menu bar shows it while sharing, with a way to stop at once. Handheld Mac works the same way: it shows your whole display, and only your taps and gestures go back to the Mac.",
 "t159": "Nothing is sent to the developer or third parties. Websites you open yourself in the mini window talk to those sites like any browser.",
 "t160": "3. Information Stored on Your Devices",
 "t161": "Data",
@@ -185,7 +185,7 @@
 "t184": "<strong>Local Network</strong>: only to find and connect to your Mac.",
 "t185": "<strong>Camera (optional)</strong>: only to photograph your desk for Picture Custom. ‘Choose from Photos’ receives only the photos you pick, without library access.",
 "t186": "<strong>Motion sensors</strong>: on iPad, to shift the background as you tilt it; on iPhone, only for the air mouse while you hold two fingers down (when turned on). Not recorded or sent anywhere but your Mac.",
-"t187": "<strong>Screen Recording (Mac, optional)</strong>: only to show a Mac window in the iPad mini window. Only the window you pick, only while requested, nothing stored, no audio.",
+"t187": "<strong>Screen Recording (Mac, optional)</strong>: only to show a Mac window in the iPad mini window. Only the window you pick, only while requested, nothing stored, no audio. Also used for Handheld Mac, under the same rules.",
 "t188": "<strong>Accessibility (Mac)</strong>: required to deliver input to the Mac. Not used to read or record screen content.",
 "t189": "5. Children's Privacy",
 "t190": "ingtype collects no personal information from anyone, including children.",
@@ -222,8 +222,8 @@
 "t221": "Price",
 "t222": "One-time purchase. No subscription, no in-app purchases.",
 "t223": "Contact",
-"t224": "In Development",
+"t224": "New",
 "t225": "Handheld Mac.",
 "t226": "Your whole Mac screen on the iPad, controlled with your fingers. Tap, drag, scroll and pinch, right on the glass.",
-"t227": "Coming in a free update. Buy once, and it's yours."
+"t227": "Included in ingtype. No subscription."
 }

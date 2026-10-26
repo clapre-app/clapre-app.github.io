@@ -156,7 +156,7 @@
 "t155": "Die Verbindung ist per TLS verschlüsselt. Nur Geräte, die mit dem 6-stelligen Code auf dem Mac gekoppelt wurden, können sich verbinden.",
 "t156": "Tastenanschläge werden als Tastenpositionen (Tastencodes) gesendet, nicht als Zeichen. Sie werden verarbeitet, sobald sie den Mac erreichen, und nie gespeichert.",
 "t157": "Sendet die iPhone-Tastatur ein Zeichen ohne Tastenposition, etwa ein Emoji, legt der Mac es kurz in die Zwischenablage, fügt es ein und stellt dann deine vorherige Zwischenablage wieder her.",
-"t158": "Wählst du im iPad-Minifenster „Mac Screen“, wird nur das eine Mac-Fenster (oder der Bildschirm), das du ausgewählt hast, als Video komprimiert und über dieselbe verschlüsselte Verbindung an dieses iPad gesendet. Es stoppt, sobald du das Minifenster schließt oder die Verbindung trennst, und nichts wird gespeichert. Während der Übertragung zeigt die Mac-Menüleiste dies an und lässt sich sofort beenden.",
+"t158": "Wählst du im iPad-Minifenster „Mac Screen“, wird nur das eine Mac-Fenster (oder der Bildschirm), das du ausgewählt hast, als Video komprimiert und über dieselbe verschlüsselte Verbindung an dieses iPad gesendet. Es stoppt, sobald du das Minifenster schließt oder die Verbindung trennst, und nichts wird gespeichert. Während der Übertragung zeigt die Mac-Menüleiste dies an und lässt sich sofort beenden. Handheld Mac funktioniert genauso: Es zeigt den ganzen Bildschirm, und nur deine Taps und Gesten gehen an den Mac zurück.",
 "t159": "Es werden keine Daten an den Entwickler oder Dritte gesendet. Websites, die du selbst im Minifenster öffnest, kommunizieren mit diesen Seiten wie jeder Browser.",
 "t160": "3. Auf deinen Geräten gespeicherte Daten",
 "t161": "Daten",
@@ -185,7 +185,7 @@
 "t184": "<strong>Lokales Netzwerk</strong>: nur, um deinen Mac zu finden und zu verbinden.",
 "t185": "<strong>Kamera (optional)</strong>: nur, um deinen Schreibtisch für Picture Custom zu fotografieren. „Aus Fotos wählen“ erhält nur die ausgewählten Fotos, ohne Zugriff auf die Mediathek.",
 "t186": "<strong>Bewegungssensoren</strong>: auf dem iPad, um den Hintergrund beim Neigen zu verschieben; auf dem iPhone nur für die Air Mouse, solange du zwei Finger hältst (wenn aktiviert). Wird nicht aufgezeichnet und nirgendwohin außer an deinen Mac gesendet.",
-"t187": "<strong>Bildschirmaufnahme (Mac, optional)</strong>: nur, um ein Mac-Fenster im iPad-Minifenster anzuzeigen. Nur das gewählte Fenster, nur solange angefordert, nichts gespeichert, kein Ton.",
+"t187": "<strong>Bildschirmaufnahme (Mac, optional)</strong>: nur, um ein Mac-Fenster im iPad-Minifenster anzuzeigen. Nur das gewählte Fenster, nur solange angefordert, nichts gespeichert, kein Ton. Wird unter denselben Regeln auch für Handheld Mac genutzt.",
 "t188": "<strong>Bedienungshilfen (Mac)</strong>: erforderlich, um Eingaben an den Mac weiterzugeben. Wird nicht genutzt, um Bildschirminhalte zu lesen oder aufzuzeichnen.",
 "t189": "5. Datenschutz von Kindern",
 "t190": "ingtype erhebt von niemandem personenbezogene Daten, auch nicht von Kindern.",
@@ -222,8 +222,8 @@
 "t221": "Preis",
 "t222": "Einmalkauf. Kein Abo, keine In-App-Käufe.",
 "t223": "Kontakt",
-"t224": "In Entwicklung",
+"t224": "Neu",
 "t225": "Handheld Mac.",
 "t226": "Dein ganzer Mac-Bildschirm auf dem iPad, mit den Fingern bedient. Tippen, ziehen, scrollen und zoomen, direkt auf dem Glas.",
-"t227": "Kommt mit einem kostenlosen Update. Einmal kaufen, und es gehört dir."
+"t227": "In ingtype enthalten. Kein Abo."
 }

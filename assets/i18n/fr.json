@@ -156,7 +156,7 @@
 "t155": "Les échanges sont chiffrés avec TLS. Seuls les appareils jumelés avec le code à 6 chiffres affiché sur le Mac peuvent se connecter.",
 "t156": "Les frappes sont envoyées sous forme de positions de touches (codes de touche), pas de caractères. Elles sont traitées comme saisie dès qu'elles atteignent le Mac et ne sont jamais enregistrées.",
 "t157": "Lorsque le clavier de l'iPhone envoie un caractère sans position de touche, comme un emoji, le Mac le place brièvement dans le presse-papiers, le colle, puis restaure votre presse-papiers précédent.",
-"t158": "Si vous choisissez « Mac Screen » dans la mini-fenêtre de l'iPad, seule la fenêtre du Mac (ou l'écran) que vous avez choisie est compressée en vidéo et envoyée à cet iPad par la même connexion chiffrée. Le partage s'arrête dès que vous fermez la mini-fenêtre ou vous déconnectez, et rien n'est enregistré. Pendant le partage, la barre des menus du Mac l'indique et permet de l'arrêter immédiatement.",
+"t158": "Si vous choisissez « Mac Screen » dans la mini-fenêtre de l'iPad, seule la fenêtre du Mac (ou l'écran) que vous avez choisie est compressée en vidéo et envoyée à cet iPad par la même connexion chiffrée. Le partage s'arrête dès que vous fermez la mini-fenêtre ou vous déconnectez, et rien n'est enregistré. Pendant le partage, la barre des menus du Mac l'indique et permet de l'arrêter immédiatement. Handheld Mac fonctionne de la même façon : il affiche tout l’écran, et seuls vos touchers et gestes repartent vers le Mac.",
 "t159": "Rien n'est envoyé au développeur ni à des tiers. Les sites web que vous ouvrez vous-même dans la mini-fenêtre communiquent avec ces sites comme n'importe quel navigateur.",
 "t160": "3. Informations stockées sur vos appareils",
 "t161": "Donnée",
@@ -185,7 +185,7 @@
 "t184": "<strong>Réseau local</strong> : uniquement pour trouver votre Mac et s'y connecter.",
 "t185": "<strong>Appareil photo (facultatif)</strong> : uniquement pour photographier votre bureau pour Picture Custom. « Choisir dans Photos » ne reçoit que les photos sélectionnées, sans accès à la photothèque.",
 "t186": "<strong>Capteurs de mouvement</strong> : sur l'iPad, pour déplacer l'arrière-plan quand vous l'inclinez ; sur l'iPhone, uniquement pour l'air mouse pendant que vous maintenez deux doigts (si activée). Rien n'est enregistré ni envoyé ailleurs qu'à votre Mac.",
-"t187": "<strong>Enregistrement de l'écran (Mac, facultatif)</strong> : uniquement pour afficher une fenêtre du Mac dans la mini-fenêtre de l'iPad. Seulement la fenêtre choisie, seulement pendant la demande, rien d'enregistré, sans audio.",
+"t187": "<strong>Enregistrement de l'écran (Mac, facultatif)</strong> : uniquement pour afficher une fenêtre du Mac dans la mini-fenêtre de l'iPad. Seulement la fenêtre choisie, seulement pendant la demande, rien d'enregistré, sans audio. Également utilisé pour Handheld Mac, selon les mêmes règles.",
 "t188": "<strong>Accessibilité (Mac)</strong> : nécessaire pour transmettre la saisie au Mac. Jamais utilisée pour lire ou enregistrer le contenu de l'écran.",
 "t189": "5. Confidentialité des enfants",
 "t190": "ingtype ne collecte aucune donnée personnelle de qui que ce soit, y compris des enfants.",
@@ -222,8 +222,8 @@
 "t221": "Prix",
 "t222": "Achat unique. Pas d'abonnement, pas d'achats intégrés.",
 "t223": "Contact",
-"t224": "En développement",
+"t224": "Nouveau",
 "t225": "Handheld Mac.",
 "t226": "Tout l'écran de votre Mac sur l'iPad, piloté du bout des doigts. Toucher, glisser, défiler et pincer, directement sur la vitre.",
-"t227": "Arrive dans une mise à jour gratuite. Achetez une fois, c'est à vous."
+"t227": "Inclus dans ingtype. Sans abonnement."
 }

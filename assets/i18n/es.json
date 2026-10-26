@@ -156,7 +156,7 @@
 "t155": "El tráfico está cifrado con TLS. Solo pueden conectarse los dispositivos emparejados con el código de 6 dígitos que muestra el Mac.",
 "t156": "Las pulsaciones se envían como posiciones de tecla (códigos de tecla), no como caracteres. Se procesan como entrada en cuanto llegan al Mac y nunca se guardan.",
 "t157": "Cuando el teclado del iPhone envía un carácter sin posición de tecla, como un emoji, el Mac lo coloca un momento en el portapapeles, lo pega y después restaura tu portapapeles anterior.",
-"t158": "Si eliges «Mac Screen» en la ventana mini del iPad, solo la ventana del Mac (o la pantalla) que elegiste se comprime en vídeo y se envía a ese iPad por la misma conexión cifrada. Se detiene al cerrar la ventana mini o desconectar, y no se guarda nada. Mientras se comparte, la barra de menús del Mac lo indica y permite detenerlo al instante.",
+"t158": "Si eliges «Mac Screen» en la ventana mini del iPad, solo la ventana del Mac (o la pantalla) que elegiste se comprime en vídeo y se envía a ese iPad por la misma conexión cifrada. Se detiene al cerrar la ventana mini o desconectar, y no se guarda nada. Mientras se comparte, la barra de menús del Mac lo indica y permite detenerlo al instante. Handheld Mac funciona igual: muestra toda la pantalla y solo tus toques y gestos vuelven al Mac.",
 "t159": "No se envía nada al desarrollador ni a terceros. Los sitios web que abras tú en la ventana mini se comunican con esos sitios como cualquier navegador.",
 "t160": "3. Información guardada en tus dispositivos",
 "t161": "Dato",
@@ -185,7 +185,7 @@
 "t184": "<strong>Red local</strong>: solo para encontrar tu Mac y conectarse a él.",
 "t185": "<strong>Cámara (opcional)</strong>: solo para fotografiar tu escritorio para Picture Custom. «Elegir de Fotos» solo recibe las fotos que eliges, sin acceso a la fototeca.",
 "t186": "<strong>Sensores de movimiento</strong>: en el iPad, para mover el fondo al inclinarlo; en el iPhone, solo para el ratón aéreo mientras mantienes dos dedos (si está activado). No se registra ni se envía a ningún sitio salvo a tu Mac.",
-"t187": "<strong>Grabación de pantalla (Mac, opcional)</strong>: solo para mostrar una ventana del Mac en la ventana mini del iPad. Solo la ventana que eliges, solo mientras se solicita, sin guardar nada, sin audio.",
+"t187": "<strong>Grabación de pantalla (Mac, opcional)</strong>: solo para mostrar una ventana del Mac en la ventana mini del iPad. Solo la ventana que eliges, solo mientras se solicita, sin guardar nada, sin audio. También se usa para Handheld Mac, con las mismas reglas.",
 "t188": "<strong>Accesibilidad (Mac)</strong>: necesaria para llevar la entrada al Mac. No se usa para leer ni grabar el contenido de la pantalla.",
 "t189": "5. Privacidad de los menores",
 "t190": "ingtype no recopila datos personales de nadie, tampoco de menores.",
@@ -222,8 +222,8 @@
 "t221": "Precio",
 "t222": "Pago único. Sin suscripción ni compras dentro de la app.",
 "t223": "Contacto",
-"t224": "En desarrollo",
+"t224": "Nuevo",
 "t225": "Handheld Mac.",
 "t226": "Toda la pantalla de tu Mac en el iPad, controlada con los dedos. Toca, arrastra, desplaza y pellizca, directamente sobre el cristal.",
-"t227": "Llegará en una actualización gratuita. Lo compras una vez y es tuyo."
+"t227": "Incluido en ingtype. Sin suscripción."
 }
