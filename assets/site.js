@@ -122,6 +122,10 @@
         setTimeout(function () { shot.src = b.getAttribute("data-img"); shot.classList.remove("fading"); }, 180);
       });
     });
+    // 쿠키: 촛불 아이콘을 누르면 "1월 7일은 양초데이" 한 줄이 나타났다 사라진다.
+    var icon = document.querySelector(".app-icon[data-cookie]");
+    var cookie = document.querySelector(".cookie");
+    if (icon && cookie) icon.addEventListener("click", function () { cookie.hidden = !cookie.hidden; });
     var form = document.getElementById("contact-form");
     if (form) form.addEventListener("submit", function (e) {
       e.preventDefault();
