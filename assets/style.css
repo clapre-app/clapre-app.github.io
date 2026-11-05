@@ -429,3 +429,9 @@ html[lang="ja"] .company-hero h1, html[lang="zh-Hans"] .company-hero h1 { max-wi
 .dev-pill i { width: 7px; height: 7px; border-radius: 50%; background: var(--amber); box-shadow: 0 0 10px var(--amber); animation: devpulse 1.8s ease-in-out infinite; }
 @keyframes devpulse { 50% { opacity: .35; } }
 @media (prefers-reduced-motion: reduce) { .dev-pill i { animation: none; } }
+
+/* 하단 쿠키: 흐린 촛불 하나. 누르면 1월 7일 한 줄 */
+footer .legal { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
+.egg { background: none; border: 0; padding: 0 2px; cursor: pointer; font-size: 14px; line-height: 1; opacity: .28; filter: grayscale(1); transition: opacity .25s, filter .25s, transform .25s; }
+.egg:hover, .egg.lit { opacity: 1; filter: none; transform: translateY(-1px); }
+.egg-text { color: var(--amber); font-size: 12.5px; animation: cookie-in .5s ease both; }

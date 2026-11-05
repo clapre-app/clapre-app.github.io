@@ -126,6 +126,9 @@
     var icon = document.querySelector(".app-icon[data-cookie]");
     var cookie = document.querySelector(".cookie");
     if (icon && cookie) icon.addEventListener("click", function () { cookie.hidden = !cookie.hidden; });
+    // 쿠키 2: 하단의 흐린 촛불을 누르면 "1월 7일" 한 줄이 켜진다.
+    var egg = document.querySelector(".egg"), eggText = document.querySelector(".egg-text");
+    if (egg && eggText) egg.addEventListener("click", function () { eggText.hidden = !eggText.hidden; egg.classList.toggle("lit", !eggText.hidden); });
     var form = document.getElementById("contact-form");
     if (form) form.addEventListener("submit", function (e) {
       e.preventDefault();
