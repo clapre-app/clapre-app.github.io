@@ -170,9 +170,9 @@ h2 { margin: 10px 0 16px; font-size: clamp(32px, 4.4vw, 54px); line-height: 1.08
 
 /* ---------- 가격 ---------- */
 .price { text-align: center; padding-bottom: 40px; }
-.price .amount { font-size: clamp(54px, 8vw, 96px); font-weight: 800; letter-spacing: -0.02em; line-height: 1; margin: 18px 0 10px; }
+.price .amount { font-size: clamp(54px, 8vw, 96px); font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; margin: 18px 0 26px; }
 /* 한글 큰 글자는 자간을 덜 붙인다(11/5: '한 번 구매'가 붙어 보임) */
-html[lang="ko"] .price .amount { letter-spacing: 0.01em; word-spacing: 0.06em; }
+html[lang="ko"] .price .amount { letter-spacing: 0.03em; word-spacing: 0.12em; }
 html[lang="ko"] h1 { letter-spacing: -0.03em; }
 html[lang="ko"] h2 { letter-spacing: -0.025em; }
 .price .amount small { font-size: 0.32em; color: var(--ink-3); letter-spacing: -0.01em; font-weight: 600; margin-left: 6px; }
