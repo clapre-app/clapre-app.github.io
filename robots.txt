@@ -2,6 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://clapre-app.github.io/sitemap.xml
-
-User-agent: *
-Disallow: /preview/
