@@ -436,3 +436,6 @@ footer .legal { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10
 .egg img { width: 18px; height: 18px; border-radius: 4px; }
 .egg:hover, .egg.lit { opacity: 1; filter: none; transform: translateY(-1px); }
 .egg-text { color: var(--amber); font-size: 12.5px; animation: cookie-in .5s ease both; }
+
+/* 한국어 설명문: 문장 단위로 줄이 바뀐다(문장 중간에서 끊기지 않게). 문장이 한 줄보다 길면 그 안에서만 접힌다. */
+.lede .s, .section-lede .s { display: inline-block; max-width: 100%; }
