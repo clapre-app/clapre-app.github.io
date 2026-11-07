@@ -267,10 +267,12 @@ footer a:hover { color: var(--ink); }
 .contact .row { display: grid; grid-template-columns: 1fr 1.4fr; gap: 16px; }
 .contact label { display: grid; gap: 6px; font-size: 14px; font-weight: 600; color: var(--ink); }
 .contact input, .contact select, .contact textarea {
-  font: 400 16px var(--font); color: var(--ink); background: rgba(255,255,255,0.05);
+  font: 400 14px var(--font); color: var(--ink); background: rgba(255,255,255,0.05);
   border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; width: 100%;
 }
 .contact textarea { resize: vertical; }
+/* 폰에서는 16px 미만이면 iOS가 포커스 때 확대하므로 16px로 */
+@media (max-width: 640px) { .contact input, .contact select, .contact textarea { font-size: 16px; } }
 .contact input:focus, .contact select:focus, .contact textarea:focus { outline: none; border-color: var(--amber); }
 .contact select option { color: #111; }
 .contact-actions { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; font-size: 14px; color: var(--ink-3); }
