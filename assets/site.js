@@ -135,7 +135,7 @@
       var f = form.elements;
       var subject = "[ingtype] " + f.topic.value;
       var body = f.message.value + "\n\n—\nDevices: " + (f.devices.value || "-");
-      location.href = "mailto:clapre.app@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+      location.href = "mailto:contact@clapre.app?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
     });
   });
 })();
